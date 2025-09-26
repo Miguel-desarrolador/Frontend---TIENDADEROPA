@@ -58,7 +58,7 @@ window.addEventListener('resize', () => showSlide(currentIndex));
   });
 
 // Api
-const API_URL = "https://backend-tiendaderopa-production.up.railway.app/api/productos";
+const API_URL = "https://backend-tiendaasdderopa-production.up.railway.app/api/productos";
 
 
 
