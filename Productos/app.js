@@ -57,8 +57,9 @@ window.addEventListener('resize', () => showSlide(currentIndex));
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-    // Api
-const API_URL = "https://backend-distribuidorafari-production.up.railway.app/api/productos";
+// Api
+const API_URL = "https://backend-tiendaderopa-production.up.railway.app/api/productos";
+
 
 
 // DOM Elements
@@ -122,7 +123,7 @@ async function cargarProductos() {
 function renderizarProductos(listaProductos) {
   productosContainer.innerHTML = listaProductos.map((p, index) => `
     <div class="producto" data-id="${p.id}" data-aos="fade-right">
-    <img src="https://backend-distribuidorafari-production.up.railway.app/img/productos/${p.imagen}" alt="${p.nombre}">
+   <img src="https://backend-tiendaderopa-production.up.railway.app/img/productos/${p.imagen}" alt="${p.nombre}">
 
       <h3>${p.nombre}</h3>
       <p class="precio">Precio: $${p.precio.toLocaleString("es-AR")}</p>
@@ -451,11 +452,10 @@ if (btnEditarImagen) btnEditarImagen.addEventListener("click", () => {
 
       const data = await res.json();
       p.imagen = data.imagen;
-// Actualizar imagen con la URL de Railway (Distribuidora Fari)
+// Actualizar imagen con la URL de Railway (Tienda de Ropa)
 if (imgElemento) {
-  imgElemento.src = `https://backend-distribuidorafari-production.up.railway.app/img/productos/${p.imagen}`;
+  imgElemento.src = `https://backend-tiendaderopa-production.up.railway.app/img/productos/${p.imagen}`;
 }
-
 
 
 
@@ -649,7 +649,7 @@ function renderizarCarrito() {
     const div = document.createElement("div");
     div.classList.add("carrito-item");
     div.innerHTML = `
-   <img src="https://backend-distribuidorafari-production.up.railway.app/img/productos/${p.imagen}" alt="${p.nombre}">
+    <img src="https://backend-tiendaderopa-production.up.railway.app/img/productos/${p.imagen}" alt="${p.nombre}">
 
 
       <div class="carrito-info">
@@ -915,13 +915,12 @@ formDatosCliente.addEventListener("submit", async (e) => {
 // GENERAR PDF EN BACKEND
 // ==========================
 async function generarPDF(datosCliente, carrito) {
- try {
-  const res = await fetch("https://backend-distribuidorafari-production.up.railway.app/api/compras/pdf", {
+try {
+  const res = await fetch("https://backend-tiendaderopa-production.up.railway.app/api/compras/pdf", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ datosCliente, carrito }) // carrito ya definido
   });
-
 
     const data = await res.json();
     console.log("PDF guardado en backend:", data.filePath);
