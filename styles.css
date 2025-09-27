@@ -306,6 +306,7 @@ hr {
 }
 
  .icono-gorra {
+    padding: 20px;
     width: 36%; /* Ajusta el tamaño de la imagen */
     height: auto;
 }
@@ -488,6 +489,12 @@ h4{
 
 .nav-buttons button:focus {
     outline: none;
+}
+.precio {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #db2f6e; /* verde */
+  margin: 6px 0;
 }
 
 .btn-ver-mas {
