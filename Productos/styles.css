@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: rgb(255, 238, 238);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,7 +104,7 @@ nav ul li a:hover {
 .menu-toggle .bar {
     width: 30px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ff3ebc;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
