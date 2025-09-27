@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(207, 171, 255, 0.447);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,10 +59,11 @@ header .logo-text {
     margin-left: 60px;
 }
 .logo-gorra {
-  width: 200px;
+  width: 180px;
   height: auto;
+  padding-top: 25px;
   position: absolute;
-  left: -5px;
+  left: -15px;
 }
 
 
@@ -107,7 +108,7 @@ nav ul li a:hover {
 .menu-toggle .bar {
     width: 30px;
     height: 4px;
-    background-color: #000000;
+    background-color: #ce1916f5;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
