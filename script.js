@@ -7,45 +7,7 @@ menuToggle.addEventListener("click", () => {
     menuToggle.classList.toggle("open");
 });
 
-// Datos de los productos
-const productos = [
-  {
-    nombre: "Gorra Deportiva",
-    descripcion: "Gorra cómoda y ligera para deportes.",
-    imagen: "img/1.jpg",
-    precio: "$7000"
-  },
-  {
-    nombre: "Gorra de Algodón",
-    descripcion: "Gorra de algodón ideal para el sol.",
-    imagen: "img/2.jpg",
-    precio: "$7000"
-  },
-  {
-    nombre: "Gorra Casual",
-    descripcion: "Gorra para un look casual y urbano.",
-    imagen: "img/3.jpg",
-    precio: "$7000"
-  },
-  {
-    nombre: "Gorra de Invierno",
-    descripcion: "Gorra abrigada para el frío invierno.",
-    imagen: "img/4.jpg",
-    precio: "$7000"
-  },
-  {
-    nombre: "Gorra de Verano",
-    descripcion: "Gorra ligera y fresca para el verano.",
-    imagen: "img/5.jpg",
-    precio: "$7000"
-  },
-  {
-    nombre: "Gorra de Cuero",
-    descripcion: "Gorra de cuero para un look elegante.",
-    imagen: "img/6.jpg",
-    precio: "$7000",
-  },
-];
+
 
 // Contenedor de productos
 const productosContainer = document.getElementById("productos-container");
