@@ -87,14 +87,15 @@ body {
   padding: 1rem;
 }
 
-/* En pantallas chicas (celulares) -> 2 columnas */
+/* En pantallas chicas (celulares) -> 1 columna */
 @media (max-width: 600px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: 1fr; /* 1 columna */
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 }
+
 
 
 /* Contenedor del logo y texto */
